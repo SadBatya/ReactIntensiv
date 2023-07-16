@@ -20,7 +20,7 @@ export default function Product({ product }: ProductProps) {
       </button>
       {details && <div>
         <p>{ product.description }</p>
-        <p><span style={{fontWeight:'bold'}}>Rate:{product.rating.rate}</span></p>
+        <p><span style={{fontWeight:'bold'}}>Rate:{product?.rating?.rate}</span></p>
       </div>}
     </div>
   );
